@@ -10,8 +10,12 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world</div>,
+    element: <App></App>,
   },
+  {
+    path: "/about",
+    element: <div>This is about page!</div>
+  }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
