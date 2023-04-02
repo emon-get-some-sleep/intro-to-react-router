@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import About from './component/About/About';
 import Contact from './component/Contact/Contact';
+import Header from './component/Header/Header';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Header></Header>
     <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>,
 )
