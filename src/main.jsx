@@ -6,19 +6,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import About from './component/About/About';
+import Contact from './component/Contact/Contact';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <div>sorry not found</div>
   },
   {
     path: "/about",
-    element: <div>This is about page!</div>
+    element: <About />
   },
   {
     path: "/contact",
-    element: <div>Contact us now, right now</div>
+    element: <Contact />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
