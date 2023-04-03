@@ -13,6 +13,7 @@ import Home from './component/Home/Home';
 import First from './component/First/First';
 import Friends from './component/Friends/Friends';
 import FriendDetail from './component/FriendDetail/FriendDetail';
+import Post from './component/Post/Post';
 
 // const router = createBrowserRouter([
 //   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <First></First>
+      },
+      {
+        path: 'post',
+        element: <Post></Post>
+
       },
       {
         path: '/about',
